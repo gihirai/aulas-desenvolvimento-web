@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <title>Media Aluno</title>
+</head>
+<body>
+    <div class="container p-4 my-4 border">
+      <h1>Calcule sua média:</h1>
+    Primeira nota: <input id="nota1" type="number"> <br />
+    Segunda  nota: <input id="nota2" type="number"> <br />
+    Terceria nota: <input id="nota3" type="number"> <br>
+    Quarta nota: <input id="nota4" type="number"> <br>
+    <p> A média é: 
+      <span class="output" id="media"></span>
+  </p>
+  <div id="resultado">
+
+  </div>
+   <button onclick="media()">Calcular Média</button>
+    </div>
+
+    
+
+   <script type="text/javascript">
+
+    function media(){
+     var nota1 = parseFloat(document.getElementById("nota1").value);
+     var nota2 = parseFloat(document.getElementById("nota2").value);
+     var nota3 = parseFloat(document.getElementById("nota3").value);
+     var nota4 = parseFloat(document.getElementById("nota4").value);
+    
+
+     var media = (nota1 + nota2 + nota3 + nota4)/4 ;
+
+     if(media >= 6){
+      document.getElementById("resultado").innerHTML = "<p>Aprovado</p>";
+      document.getElementById("resultado").style.background = 'rgb(0,255,0)';
+     }
+      else if(media< 2){
+       document.getElementById("resultado").innerHTML = "<p>Reprovado</p>";
+       document.getElementById("resultado").style.background = 'rgb(255,0,0)';
+      }
+      
+      else if(media> 2.1 && media<= 5.9){
+        document.getElementById("resultado").innerHTML = "<p>Recuperação</p>";
+        document.getElementById("resultado").style.background = 'rgb(0,0,255)';
+      }
+    }
+ </script>
+
+</body>
+</html>
