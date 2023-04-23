@@ -1,0 +1,45 @@
+body{
+    background-color: 	#FFE4E1;
+    margin: 5rem;
+}
+
+.autor{
+    color: #FF69B4;
+    /* short hand */
+    border-bottom: dotted 1rem rgb(238,130,238);
+    font-size: 3em;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo{
+    color: 	#000000;
+}
+
+.description{
+    color: #333333;
+    font-size: 17px;
+}
+
+.contato{
+    border: solid black;
+    padding: 1rem;
+    text-align: center;
+}
+
+.img{
+    width: 15%;
+    right: 20%;
+}
+
+.contato li{
+    text-align: left;
+    
+}
+
+.bi{
+    font-size: 2rem;
+}
+
+.negrito {
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
